@@ -1,5 +1,5 @@
 FROM maven as BUILD
-RUN mkdir /project /project/src
+RUN mkdir -p /project/src
 COPY ./pom.xml /project
 COPY ./src /project/src
 RUN cd /project && mvn clean package -Dmaven.test.skip=true
