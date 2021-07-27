@@ -13,7 +13,7 @@ public class DockerApplication {
 
 	@RequestMapping("/")
 	public String home(@RequestHeader HttpHeaders headers) {
-		return "---------- request header ----------\n"+headers;
+		return "---------- request header ----------\n" + headers;
 	}
 
 	public static void main(String[] args) {
